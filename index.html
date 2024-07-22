@@ -51,7 +51,7 @@
                 <button class="button" type="button">order</button>
             </div>
 
-            <picture class="hero-image">
+            <picture  class="hero-image">
             <source srcset="
             ./assets/images/hero_mobile@1x.webp 280w, 
             ./assets/images/hero_mobile@2x.webp 560w" 
@@ -127,12 +127,47 @@
                 <li class="cap-item-3"><p class="text capability-item">Active noise cancellation option</p></li>
                 <li class="cap-item-4"><p class="text capability-item">Unsurpassed microphone system</p></li>
                 <li class="cap-item-5"><p class="text capability-item">Support of voice assistants</p></li>
-                <li class="cap-item-"><p class="text capability-item">Bose AR Augmented Reality Audio Platform</p></li>
+                <li class="cap-item-6"><p class="text capability-item">Bose AR Augmented Reality Audio Platform</p></li>
             </ul>
         </section>
 
         <section class="luxury-section">
-          <h2>The luxury of silence</h2>
+          <h2 class="luxury-title">The luxury of silence</h2>
+          <picture class="luxury-image">
+            <source srcset="
+            ./assets/images/luxury_img_mobile@1x.webp 280w, 
+            ./assets/images/luxury_img_mobile@2x.webp 560w" 
+            media="(max-width: 767px)" 
+            sizes="100%"
+            loading ="lazy">
+     
+            <source srcset="
+            ./assets/images/luxury_img_tablet@1x.webp 768w,
+            ./assets/images/luxury_img_tablet@2x.webp 1536w" 
+            media="(min-width: 768px) and (max-width: 1279px)" 
+            sizes="100%"
+            loading ="lazy">  
+
+            <source srcset="
+            ./assets/images/luxury_img_desktop@1x.webp 1440w,
+            ./assets/images/luxury_img_desktop@2x.webp 2880w"
+            media="(min-width: 1280px)" 
+            sizes="100%"
+            loading ="lazy">
+    
+            <img src="./assets/images/luxury_img_mobile@1x.webp" alt="headphones in the sunset" class="luxury-image">
+          </picture>
+
+          <ul class="luxury-list">
+            <li>
+                <h3>Maximum enjoyment</h3>
+                <p class="text luxury-text">In order to create a comfortable atmosphere - raise the level by level from the "transparent" mode to the maximum blocking of sounds. The conversation mode can be activated in one click using a special button.</p>
+            </li>
+            <li>
+                <h3>Crystal sound</h3>
+                <p class="text luxury-text">The speaker system and brand name active equalizer are able to provide high-quality and powerful sound at any volume level. You can be sure of no distortion and crystal clear at high and low frequencies.</p>
+            </li>
+          </ul>
         </section>
     </main>
     <script src="./js/index.js"></script>
