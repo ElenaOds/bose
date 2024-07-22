@@ -20,7 +20,7 @@
     <header class="header">
         <a href="./index.html">
             <svg area-label="logo" class="logo">
-                <use href="./assets/sprite.svg#logo"></use>
+                <use href="./assets/icons/sprite.svg#logo"></use>
             </svg> 
         </a>
        
@@ -32,7 +32,7 @@
             </svg>
         </button>  
         <nav class="navigation">
-            <a href="#" class="nav-item">Characteristics</a>
+            <a href="#characteristics" class="nav-item">Characteristics</a>
             <a href="#" class="nav-item">History</a>
             <a href="#" class="nav-item">Reviews</a>
             <a href="#" class="nav-item">Payment and delivery</a>
@@ -50,19 +50,89 @@
                 <br/>Bose NC 700</h1>
                 <button class="button" type="button">order</button>
             </div>
-            <img srcset="
-            ./assets/images/hero_mobile@1x.webp 280w,
-            ./assets/images/hero_mobile@2x.webp 560w,
+
+            <picture class="hero-image">
+            <source srcset="
+            ./assets/images/hero_mobile@1x.webp 280w, 
+            ./assets/images/hero_mobile@2x.webp 560w" 
+            media="(max-width: 767px)" 
+            sizes="280px, 560px"
+            loading ="lazy">
+     
+            <source srcset="
             ./assets/images/hero_tablet@1x.webp 354w,
-            ./assets/images/hero_tablet@2x.webp 708w,
+            ./assets/images/hero_tablet@2x.webp 708w" 
+            media="(min-width: 768px) and (max-width: 1279px)" 
+            sizes="354px, 708px"
+            loading ="lazy">  
+
+            <source srcset="
             ./assets/images/hero_desktop@1x.webp 700w,
             ./assets/images/hero_desktop@2x.webp 1400w"
-            src="./assets/images/hero_mobile@1x.webp" 
-            alt="headphones" 
-            sizes="(min-width: 1280px) 700px, (min-width: 768px) 354px, 280px"
-            class="hero-image">  
-
+            media="(min-width: 1280px)" 
+            sizes="700px, 1400px"
+            loading ="lazy">
+    
+            <img src="./assets/images/hero_mobile@1x.webp" alt="Headphones">
+          </picture>
+      
         </div>
+        </section>
+
+        <section id="characteristics" class="characteristics-section">
+            <div class="characteristics-container">
+                <div class="characteristics-wrapper">
+                <h2>Premium design 
+                    <br/>and comfort</h2>
+                    <h3>11 levels of noise reduction</h3>
+                    <p class="text first-block">With the new Bose Noise Canceling Headphone 700, you can smoothly increase or decrease the level of noise cancellation. You can be heard perfectly and you hear the interlocutor clearly, even in a noisy environment!</p>
+                    
+                    <h3>Comfort up to max level</h3>
+                    <p class="text second-block">Stylish, lightweight stainless steel headband with soft, angled cups of headphones for comfortable seating. The inner side is made of soft gel lining that fits well to the head.</p>
+                </div>
+                    <picture class="characteristics-image">
+                        <source srcset="
+                        ./assets/images/char_img_mobile@1x.webp 280w, 
+                        ./assets/images/char_img_mobile@2x.webp 560w" 
+                        media="(max-width: 767px)" 
+                        sizes="280px, 560px"
+                        loading ="lazy">
+                 
+                        <source srcset="
+                        ./assets/images/char_img_tablet@1x.webp 354w,
+                        ./assets/images/char_img_tablet@2x.webp 708w" 
+                        media="(min-width: 768px) and (max-width: 1279px)" 
+                        sizes="354px, 708px"
+                        loading ="lazy">  
+            
+                        <source srcset="
+                        ./assets/images/char_img_desktop@1x.webp 590w,
+                        ./assets/images/char_img_desktop@2x.webp 1180w"
+                        media="(min-width: 1280px)" 
+                        sizes="590px, 1180px"
+                        loading ="lazy">
+                
+                        <img src="./assets/images/char_img_mobile@1x.webp" alt="lady in headphones">
+                      </picture>
+                </div>
+        </section>
+
+        <section class="capability-section">
+            <h2 class="capability-title-sm">capable 
+                <br/>of so much</h2>
+            <h2 class="capability-title">capable of so much</h2>
+            <ul class="capability-container">
+                <li class="cap-item-1"><p class="text capability-item">Ability to receive calls</p></li>
+                <li class="cap-item-2"><p class="text capability-item">Rich and powerful sound</p></li>
+                <li class="cap-item-3"><p class="text capability-item">Active noise cancellation option</p></li>
+                <li class="cap-item-4"><p class="text capability-item">Unsurpassed microphone system</p></li>
+                <li class="cap-item-5"><p class="text capability-item">Support of voice assistants</p></li>
+                <li class="cap-item-"><p class="text capability-item">Bose AR Augmented Reality Audio Platform</p></li>
+            </ul>
+        </section>
+
+        <section class="luxury-section">
+          <h2>The luxury of silence</h2>
         </section>
     </main>
     <script src="./js/index.js"></script>
