@@ -124,7 +124,6 @@ h1 {
   @media screen and (min-width: 1280px) {
     font-size: 74px;
     margin-bottom: 86px;
-    margin-left: 80px;
   }
 }
 
@@ -211,6 +210,8 @@ h1 {
     width: 400px;
     height: 68px;
     font-size: 20px;
+    align-self: start;
+  
   }
 
   &:hover,
@@ -289,10 +290,12 @@ h3 {
 
 .first-block {
   margin-bottom: 24px;
+  text-align: justify;
 }
 
 .second-block {
   margin-bottom: 32px;
+  text-align: justify;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -451,6 +454,7 @@ h3 {
 }
 
 .luxury-image {
+  display: block;
   margin-bottom: 32px;
 
   @media screen and (min-width: 1280px) {
@@ -477,7 +481,288 @@ h3 {
 }
 
 .luxury-text {
+  text-align: justify;
   @media screen and (min-width: 1280px) {
     font-size: 20px;
   }
+}
+
+.bose-ar-section {
+  padding: 0 20px;
+  margin-bottom: 52px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 0;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 190px;
+    margin-bottom: 170px;
+  }
+}
+
+.bose-ar-container {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 170px;
+  }
+}
+
+.bose-ar-text {
+  margin-bottom: 32px;
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+  }
+}
+
+.ar-image {
+  display: block;
+  justify-self: center;
+
+  @media screen and (min-width: 768px) {
+    justify-self: end;
+  }
+}
+
+.guarantee-section {
+  padding: 0 20px;
+  margin-bottom: 52px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 60px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 0;
+    margin-bottom: 197px;
+    background-image: url('./assets/icons/line.svg');
+    background-size: 300px 110px;
+    background-repeat: no-repeat;
+    background-position: bottom right -20px;
+
+
+  }
+}
+
+.guarantee-container {
+  display: grid;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 150px;
+     padding-right: 170px;
+  }
+}
+
+.guarantee-subtitle {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 28px;
+  }
+}
+
+.guarantee-subtitle::before {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color);
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: -24px;
+} 
+
+.guarantee-text {
+  @media screen and (min-width: 1280px) {
+   font-size: 20px;
+ }
+}
+
+.guarantee-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.guarantee-item {
+  padding-top: 24px;
+}
+
+.guarantee-item-1 {
+  padding-top: 24px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 69px;
+  }
+
+}
+
+.guarantee-image {
+  display: block;
+  justify-self: center;
+
+  @media screen and (min-width: 768px) {
+    justify-self: start;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.history-section {
+  padding: 0 20px;
+  margin-bottom: 52px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('./assets/icons/line.svg');
+    background-size: 220px 82px;
+    background-repeat: no-repeat;
+    background-position: top right -90px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 0;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 190px;
+    margin-bottom: 170px;
+  }
+}
+
+.history-container {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 50px 150px;
+  }
+}
+
+.history-text-1 {
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.history-text-2 {
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+.history-text-3 {
+  text-align: justify;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+}
+
+.history-text-4 {
+  font-size: 20px;
+  color: #E7E7E7;
+  line-height: 1.25;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.history-text-5 {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.history-title {
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.history-image-1 {
+  display: block;
+  justify-self: center;
+
+  @media screen and (min-width: 768px) {
+    justify-self: end;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+} 
+
+.history-image-2 {
+  isplay: block;
+  justify-self: center;
+
+  @media screen and (min-width: 768px) {
+    justify-self: start;
+    grid-column: 1 / 2;
+    grid-row: 5 / 7;
+  }
+}
+
+.history-quote {
+  @media screen and (min-width: 768px) {
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+  }
+}
+
+.quotes {
+  width: 34px;
+  height: 25px;
+  margin-bottom: 24px;
 }

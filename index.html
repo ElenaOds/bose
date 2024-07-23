@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bose</title>
+    <meta
+      name="description"
+      content="Discover premium headphones for an immersive audio experience. Shop our collection now!"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,24 +22,25 @@
 </head>
 <body>
     <header class="header">
-        <a href="./index.html">
-            <svg area-label="logo" class="logo">
+        <a href="./index.html" aria-label="logo image linking to the header of the website">
+            <svg aria-label="logo" class="logo">
                 <use href="./assets/icons/sprite.svg#logo"></use>
             </svg> 
         </a>
        
        <button type="button" class="burgrer-btn"
        aria-expanded="false" 
-       aria-controls="mobile-menu">
+       aria-controls="mobile-menu"
+       aria-label="open mobile menu button">
             <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 11.989H0V10.0371H22V11.989ZM22 7.10933H0V5.15747H22V7.10933ZM22 2.22969H0V0.277832H22V2.22969Z" fill="white" fill-opacity="0.8"/>
             </svg>
         </button>  
         <nav class="navigation">
-            <a href="#characteristics" class="nav-item">Characteristics</a>
-            <a href="#" class="nav-item">History</a>
-            <a href="#" class="nav-item">Reviews</a>
-            <a href="#" class="nav-item">Payment and delivery</a>
+            <a href="#characteristics" class="nav-item" aria-label="link to characteristics section">Characteristics</a>
+            <a href="#history" class="nav-item" aria-label="link to history section">History</a>
+            <a href="#" class="nav-item" aria-label="link to reviews section">Reviews</a>
+            <a href="#" class="nav-item" aria-label="link to payment and delivery section">Payment and delivery</a>
         </nav>
     </header>
     <main>
@@ -48,7 +53,7 @@
                 <br/>of playback</p>
             <h1>Headphones 
                 <br/>Bose NC 700</h1>
-                <button class="button" type="button">order</button>
+            <button class="button" type="button" aria-label="order button for order form opening">order</button>
             </div>
 
             <picture  class="hero-image">
@@ -155,7 +160,7 @@
             sizes="100%"
             loading ="lazy">
     
-            <img src="./assets/images/luxury_img_mobile@1x.webp" alt="headphones in the sunset" class="luxury-image">
+            <img src="./assets/images/luxury_img_mobile@1x.webp" alt="headphones in the sunset" >
           </picture>
 
           <ul class="luxury-list">
@@ -168,6 +173,153 @@
                 <p class="text luxury-text">The speaker system and brand name active equalizer are able to provide high-quality and powerful sound at any volume level. You can be sure of no distortion and crystal clear at high and low frequencies.</p>
             </li>
           </ul>
+        </section>
+
+        <section class="bose-ar-section">
+            <div class="bose-ar-container">
+                <div>
+                    <h2>Bose AR</h2>
+                    <h3>Brand name technology</h3>
+                    <p class="text bose-ar-text">Bose AR is a unique audio platform augmented reality, that opens before you new facets of sound. It allows you to stay connected to the real world and immerse yourself in the virtual universe at the same time.</p>
+                </div>
+                <picture class="ar-image">
+                    <source srcset="
+                    ./assets/images/ar_img_mobile@1x.webp 280w, 
+                    ./assets/images/ar_img_mobile@2x.webp 560w" 
+                    media="(max-width: 767px)" 
+                    sizes="280px, 560px"
+                    loading ="lazy">
+             
+                    <source srcset="
+                    ./assets/images/ar_img_tablet@1x.webp 354w,
+                    ./assets/images/ar_img_tablet@2x.webp 708w" 
+                    media="(min-width: 768px) and (max-width: 1279px)" 
+                    sizes="354px, 708px"
+                    loading ="lazy">  
+        
+                    <source srcset="
+                    ./assets/images/ar_img_desktop@1x.webp 700w,
+                    ./assets/images/ar_img_desktop@2x.webp 1400w"
+                    media="(min-width: 1280px)" 
+                    sizes="700px, 1400px"
+                    loading ="lazy">
+            
+                    <img src="./assets/images/ar_img_mobile@1x.webp" alt="lady in headphones">
+                  </picture>
+            </div>
+        </section>
+
+        <section class="guarantee-section">
+            <div class="guarantee-container">
+            <ul class="guarantee-list">
+                <h2>Guarantees</h2>
+                <li class="guarantee-item-1">
+                    <h3 class="guarantee-subtitle">90 Day Money Back Guarantee</h3>
+                    <p class="text guarantee-text">If you are not 100% satisfied with a product, you can return it back for a full refund.</p>
+                </li>
+                <li class="guarantee-item">
+                    <h3 class="guarantee-subtitle">1 year warranty</h3>
+                    <p class="text guarantee-text">Regardless of your country of residence, if your headphones are broken, we will send you new ones.</p>
+                </li>
+            </ul>
+
+            <picture class="guarantee-image">
+                <source srcset="
+                ./assets/images/headphones_mobile@1x.webp 280w, 
+                ./assets/images/headphones_mobile@2x.webp 560w" 
+                media="(max-width: 767px)" 
+                sizes="280px, 560px"
+                loading ="lazy">
+         
+                <source srcset="
+                ./assets/images/headphones_tablet@1x.webp 354w,
+                ./assets/images/headphones_tablet@2x.webp 708w" 
+                media="(min-width: 768px) and (max-width: 1279px)" 
+                sizes="354px, 708px"
+                loading ="lazy">  
+    
+                <source srcset="
+                ./assets/images/headphones_desktop@1x.webp 590w,
+                ./assets/images/headphones_desktop@2x.webp 1180w"
+                media="(min-width: 1280px)" 
+                sizes="590px, 1180px"
+                loading ="lazy">
+        
+                <img src="./assets/images/headphones_mobile@1x.webp" alt="headphones">
+              </picture>
+            </div>
+        </section>
+
+        <section class="history-section" id="history">
+            <div class="history-container">
+            <h2 class="history-title">brand 
+                <br/>creation 
+                <br/>history
+            </h2>
+            <p class="text history-text-1">The history of Bose Corporation began with disappointment. In 1956, MIT graduate student Amar Bose bought one of the best stereo systems at the time for his home. After a few minutes of listening to the audio recording, his bewilderment turned to disappointment.</p>
+            
+            <picture class="history-image-1">
+                <source srcset="
+                ./assets/images/history_1_mobile@1x.webp 280w, 
+                ./assets/images/history_1_mobile@2x.webp 560w" 
+                media="(max-width: 767px)" 
+                sizes="280px, 560px"
+                loading ="lazy">
+         
+                <source srcset="
+                ./assets/images/history_1_tablet@1x.webp 354w,
+                ./assets/images/history_1_tablet@2x.webp 708w" 
+                media="(min-width: 768px) and (max-width: 1279px)" 
+                sizes="354px, 708px"
+                loading ="lazy">  
+    
+                <source srcset="
+                ./assets/images/history_1_desktop@1x.webp 700w,
+                ./assets/images/history_1_desktop@2x.webp 1400w"
+                media="(min-width: 1280px)" 
+                sizes="700px, 1400px"
+                loading ="lazy">
+        
+                <img src="./assets/images/history_1_mobile@1x.webp" alt="headphones">
+              </picture>
+
+              <p class="text history-text-2">From Amar's point of view, the sound was so flat and unnatural that it was better not to listen to the music at all than to listen to it in such a distorted form.</p>
+              <p class="text history-text-3">Bose's frustration grew into a firm determination to build audio equipments that would reproduce sound with impeccable accuracy and naturalness</p>
+
+              <picture class="history-image-2">
+                <source srcset="
+                ./assets/images/history_2_mobile@1x.webp 280w, 
+                ./assets/images/history_2_mobile@2x.webp 560w" 
+                media="(max-width: 767px)" 
+                sizes="280px, 560px"
+                loading ="lazy">
+         
+                <source srcset="
+                ./assets/images/history_2_tablet@1x.webp 294w,
+                ./assets/images/history_2_tablet@2x.webp 588w" 
+                media="(min-width: 768px) and (max-width: 1279px)" 
+                sizes="294px, 588px"
+                loading ="lazy">  
+    
+                <source srcset="
+                ./assets/images/history_2_desktop@1x.webp 290w,
+                ./assets/images/history_2_desktop@2x.webp 580w"
+                media="(min-width: 1280px)" 
+                sizes="290px, 580px"
+                loading ="lazy">
+        
+                <img src="./assets/images/history_2_mobile@1x.webp" alt="headphones">
+    
+              </picture>
+              <div class="history-quote">
+                <svg aria-label="quotes" class="quotes">
+                    <use href="./assets/icons/sprite.svg#quotes"></use>
+                </svg> 
+                <p class="history-text-4">Never stop dreaming. Always dream of the best, and think about how to achieve it.</p>
+                <p class="text history-text-5">Amar Bose is a company founder</p>
+            </div>
+
+        </div>
         </section>
     </main>
     <script src="./js/index.js"></script>
