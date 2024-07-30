@@ -8,14 +8,11 @@
       name="description"
       content="Discover premium headphones for an immersive audio experience. Shop our collection now!"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
@@ -23,12 +20,13 @@
 <body>
     <header class="header">
         <a href="./index.html" aria-label="logo image linking to the header of the website">
-            <svg aria-label="logo" class="logo">
+            <svg class="logo" aria-label="logo">
                 <use href="./assets/icons/sprite.svg#logo"></use>
             </svg> 
         </a>
        
-       <button type="button" class="burgrer-btn"
+       <button class="burgrer-btn" 
+       type="button" 
        aria-expanded="false" 
        aria-controls="mobile-menu"
        aria-label="open mobile menu button">
@@ -37,15 +35,16 @@
             </svg>
         </button>  
         <nav class="navigation">
-            <a href="#characteristics" class="nav-item" aria-label="link to characteristics section">Characteristics</a>
-            <a href="#history" class="nav-item" aria-label="link to history section">History</a>
-            <a href="#" class="nav-item" aria-label="link to reviews section">Reviews</a>
-            <a href="#" class="nav-item" aria-label="link to payment and delivery section">Payment and delivery</a>
+            <ul class="navigation-list">
+            <li><a class="nav-item" href="#characteristics" aria-label="link to characteristics section">Characteristics</a></li>
+            <li><a class="nav-item" href="#history" aria-label="link to history section">History</a></li>
+            <li><a class="nav-item" href="#" aria-label="link to reviews section">Reviews</a></li>
+            <li><a class="nav-item" href="#" aria-label="link to payment and delivery section">Payment and delivery</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="hero-section">
-        <div class="hero-container">
+        <section>
             <div class="hero-wrapper">
             <p class="text hero-text">Noise cancellation headphones 
                 <br/>that are capable for a lot of things</p>
@@ -80,14 +79,11 @@
     
             <img src="./assets/images/hero_mobile@1x.webp" alt="Headphones">
           </picture>
-      
-        </div>
         </section>
 
-        <section id="characteristics" class="characteristics-section">
-            <div class="characteristics-container">
+        <section id="characteristics">
                 <div class="characteristics-wrapper">
-                <h2>Premium design 
+                <h2 class="characteristics-title">Premium design 
                     <br/>and comfort</h2>
                     <h3>11 levels of noise reduction</h3>
                     <p class="text first-block">With the new Bose Noise Canceling Headphone 700, you can smoothly increase or decrease the level of noise cancellation. You can be heard perfectly and you hear the interlocutor clearly, even in a noisy environment!</p>
@@ -119,14 +115,13 @@
                 
                         <img src="./assets/images/char_img_mobile@1x.webp" alt="lady in headphones">
                       </picture>
-                </div>
-        </section>
+            </section>
 
         <section class="capability-section">
             <h2 class="capability-title-sm">capable 
                 <br/>of so much</h2>
             <h2 class="capability-title">capable of so much</h2>
-            <ul class="capability-container">
+            <ul class="capability-wrapper">
                 <li class="cap-item-1"><p class="text capability-item">Ability to receive calls</p></li>
                 <li class="cap-item-2"><p class="text capability-item">Rich and powerful sound</p></li>
                 <li class="cap-item-3"><p class="text capability-item">Active noise cancellation option</p></li>
@@ -136,7 +131,7 @@
             </ul>
         </section>
 
-        <section class="luxury-section">
+        <section>
           <h2 class="luxury-title">The luxury of silence</h2>
           <picture class="luxury-image">
             <source srcset="
@@ -175,10 +170,9 @@
           </ul>
         </section>
 
-        <section class="bose-ar-section">
-            <div class="bose-ar-container">
-                <div>
-                    <h2>Bose AR</h2>
+        <section>
+                <div class="ar-bose-wrapper">
+                    <h2 class="ar-bose-title">Bose AR</h2>
                     <h3>Brand name technology</h3>
                     <p class="text bose-ar-text">Bose AR is a unique audio platform augmented reality, that opens before you new facets of sound. It allows you to stay connected to the real world and immerse yourself in the virtual universe at the same time.</p>
                 </div>
@@ -206,13 +200,11 @@
             
                     <img src="./assets/images/ar_img_mobile@1x.webp" alt="lady in headphones">
                   </picture>
-            </div>
         </section>
 
         <section class="guarantee-section">
-            <div class="guarantee-container">
             <ul class="guarantee-list">
-                <h2>Guarantees</h2>
+                <h2 class="guarantee-title">Guarantees</h2>
                 <li class="guarantee-item-1">
                     <h3 class="guarantee-subtitle">90 Day Money Back Guarantee</h3>
                     <p class="text guarantee-text">If you are not 100% satisfied with a product, you can return it back for a full refund.</p>
@@ -247,7 +239,6 @@
         
                 <img src="./assets/images/headphones_mobile@1x.webp" alt="headphones">
               </picture>
-            </div>
         </section>
 
         <section class="history-section" id="history">
@@ -312,7 +303,7 @@
     
               </picture>
               <div class="history-quote">
-                <svg aria-label="quotes" class="quotes">
+                <svg class="quotes" aria-label="quotes">
                     <use href="./assets/icons/sprite.svg#quotes"></use>
                 </svg> 
                 <p class="history-text-4">Never stop dreaming. Always dream of the best, and think about how to achieve it.</p>
@@ -321,7 +312,11 @@
 
         </div>
         </section>
+        
     </main>
+    <footer>
+        <p>All rights are reserved &copy; 2024</p>
+    </footer>
     <script src="./js/index.js"></script>
 </body>
 </html>
