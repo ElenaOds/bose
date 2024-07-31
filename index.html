@@ -38,7 +38,7 @@
             <ul class="navigation-list">
             <li><a class="nav-item" href="#characteristics" aria-label="link to characteristics section">Characteristics</a></li>
             <li><a class="nav-item" href="#history" aria-label="link to history section">History</a></li>
-            <li><a class="nav-item" href="#" aria-label="link to reviews section">Reviews</a></li>
+            <li><a class="nav-item" href="#reviews" aria-label="link to reviews section">Reviews</a></li>
             <li><a class="nav-item" href="#" aria-label="link to payment and delivery section">Payment and delivery</a></li>
             </ul>
         </nav>
@@ -203,8 +203,9 @@
         </section>
 
         <section class="guarantee-section">
-            <ul class="guarantee-list">
+            <div class="guarantee-list">
                 <h2 class="guarantee-title">Guarantees</h2>
+                <ul>
                 <li class="guarantee-item-1">
                     <h3 class="guarantee-subtitle">90 Day Money Back Guarantee</h3>
                     <p class="text guarantee-text">If you are not 100% satisfied with a product, you can return it back for a full refund.</p>
@@ -214,6 +215,7 @@
                     <p class="text guarantee-text">Regardless of your country of residence, if your headphones are broken, we will send you new ones.</p>
                 </li>
             </ul>
+            </div>
 
             <picture class="guarantee-image">
                 <source srcset="
@@ -242,7 +244,6 @@
         </section>
 
         <section class="history-section" id="history">
-            <div class="history-container">
             <h2 class="history-title">brand 
                 <br/>creation 
                 <br/>history
@@ -309,14 +310,38 @@
                 <p class="history-text-4">Never stop dreaming. Always dream of the best, and think about how to achieve it.</p>
                 <p class="text history-text-5">Amar Bose is a company founder</p>
             </div>
+        </section>
 
-        </div>
+        <section>
+            <h2 id="reviews">reviews</h2>
+            <ul class="slider-container">
+                <li class="video-item" id="slide-1">
+                    <iframe class="reviews-video" src="https://www.youtube.com/embed/VqP11Ma_2Fk?si=kZqGSSZbHJ_Q4jcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a class="reviews-link" href="https://www.youtube.com/watch?v=VqP11Ma_2Fk" target="_blank">Bose corporation</a>
+                    <p class="text">Critically acclaimed for their powerful noise cancelling, astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling Headphones 700 help turn any space into the perfect place to listen to music, get work done, or just shut out the world for a few moments and relax</p>
+                </li>
+                <li class="video-item" id="slide-2">
+                    <iframe class="reviews-video" src="https://www.youtube.com/embed/BUyLpf-u97Y?si=l4g2coQ-Z8aZy8GG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a class="reviews-link" href="https://www.youtube.com/watch?v=BUyLpf-u97Y" target="_blank">Bose corporation</a>
+                    <p class="text">Bose Noise Cancelling Headphones 700 deliver everything you expect — and things you never imagined possible. The perfect balance of quiet, comfort, and sound</p>
+                </li>
+                <li class="video-item" id="slide-3">
+                    <iframe class="reviews-video" src="https://www.youtube.com/embed/NgtznBDFRUo?si=IE2MlkJioB8J0iaY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <a class="reviews-link" href="https://www.youtube.com/watch?v=NgtznBDFRUo" target="_blank">Bose corporation</a>
+                    <p class="text">Real stories of people tuning in or out to feel peace, find escape, and for self-care</p>
+                </li>
+            </ul>
+            <div class="navigation">
+                <button class="video-button" data-slide="1" type="button">01</button>  
+                <button class="video-button" data-slide="2" type="button">02</button>  
+                <button class="video-button" data-slide="3" type="button">03</button>
+            </div>
         </section>
         
     </main>
     <footer>
         <p>All rights are reserved &copy; 2024</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/slide.js"></script>
 </body>
 </html>

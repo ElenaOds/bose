@@ -16,7 +16,7 @@ body {
     background-color: var(--bg-color);
     font-family: "Open Sans", 'Roboto', sans-serif;
     font-weight: 400;
-    line-heigt: 1.25;
+    line-height: 1.25;
     letter-spacing: 1px;
     color: var(--text-color);
 
@@ -595,9 +595,6 @@ h3 {
 }
 
 .history-section {
-  padding: 0 20px;
-  margin-bottom: 52px;
-
   @media screen and (max-width: 767px) {
     background-image: url('./assets/icons/line.svg');
     background-size: 220px 82px;
@@ -605,38 +602,20 @@ h3 {
     background-position: top right -90px;
   }
 
-  @media screen and (min-width: 768px) {
-    padding-left: 60px;
-    padding-right: 0;
-    margin-bottom: 100px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding-left: 190px;
-    margin-bottom: 170px;
-  }
 }
 
-.history-container {
-  display: grid;
-  gap: 32px;
-
-  @media screen and (min-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px 60px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    gap: 50px 150px;
-  }
-}
 
 .history-text-1 {
   text-align: justify;
 
   @media screen and (min-width: 768px) {
+    margin-left: 60px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 190px;
   }
 }
 
@@ -644,8 +623,13 @@ h3 {
   text-align: justify;
 
   @media screen and (min-width: 768px) {
+    margin-left: 60px;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 190px;
   }
 }
 
@@ -653,8 +637,13 @@ h3 {
   text-align: justify;
 
   @media screen and (min-width: 768px) {
+    margin-right: 60px;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 190px;
   }
 }
 
@@ -665,20 +654,36 @@ h3 {
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 32px;
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 190px;
   }
 }
 
 .history-text-5 {
   color: rgb(255 255 255 / .4);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 190px;
+  }
 }
 
 .history-title {
-  margin-bottom: 0;
-
   @media screen and (min-width: 768px) {
+    margin-left: 60px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 190px;
   }
 }
 
@@ -694,13 +699,18 @@ h3 {
 } 
 
 .history-image-2 {
-  isplay: block;
+  display: block;
   justify-self: center;
 
   @media screen and (min-width: 768px) {
-    justify-self: start;
+    justify-self: auto;
+    margin-left: 60px;
     grid-column: 1 / 2;
-    grid-row: 5 / 7;
+    grid-row: 4 / 7;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 190px;
   }
 }
 
@@ -715,4 +725,81 @@ h3 {
   width: 34px;
   height: 25px;
   margin-bottom: 24px;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.video-item {
+  display: none;
+}
+
+.video-item.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-video {
+  display: block;
+  align-self: center;
+  width: 280px;
+  height: 180px;
+  margin-bottom: 32px;
+  
+  @media screen and (min-width: 768px) {
+    width: 648px;
+    height: 417px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 980px;
+    height: 590px;
+  }
+}
+
+.reviews-link {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--accent-color);
+  margin-bottom: 16px;
+  
+
+  /* @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.45;
+  } */
+}
+
+.navigation {
+  display: flex;
+  gap: 34px;
+}
+
+.video-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: rgb(223 61 58 /.5);
+  cursor: pointer;
+}
+
+.video-button.active {
+  color: var(--accent-color); 
+}
+
+.video-button:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 1px;
+  top: 50%;
+  margin-left: 20px;
+  background-color: rgb(223 61 58 /.5);
+}
+
+.video-button.active::after {
+  background-color:  var(--accent-color); 
 }
