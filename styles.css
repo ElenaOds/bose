@@ -14,7 +14,7 @@
 body {
     margin: 0 auto;
     background-color: var(--bg-color);
-    font-family: "Open Sans", 'Roboto', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 1px;
@@ -873,4 +873,110 @@ h3 {
 
 .video-button.active::after {
   background-color:  var(--accent-color); 
+}
+
+.faq-section {
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr;
+    padding-right: 60px;
+    padding-left: 60px;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: 190px;
+    padding-left: 190px;
+    gap: 50px;
+  }
+}
+
+.faq-item {
+  padding: 24px 0;
+  border-bottom: 2px solid rgb(255 255 255 / .5);
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    padding: 24px 0 37px 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 84px 0 24px 0;
+  }
+}
+
+.faq-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.faq-number {
+  font-size: 20px;
+  line-height: 0.7;
+  letter-spacing: 0;
+  margin-right: 16px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 28px;
+    line-height: 1.25;
+    margin-right: 32px;
+  }
+}
+
+.faq-question {
+  font-size: 14px;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.25;
+  }
+}
+
+.faq-icon {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 1440px) {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.faq-text {
+  font-size: 12px;
+  line-height: 1.45;
+  text-align: justify;
+  display: none;
+  overflow: hidden;
+
+  @media screen and (min-width: 1748px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
+
+.faq-item.open .faq-text {
+  display: block;
+  animation: fade-in 1s ease; 
+
+} 
+
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
