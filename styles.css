@@ -990,17 +990,13 @@ h3 {
   }
 
   @media screen and (min-width: 1440px) {
-    grid-template-columns: 1fr 1fr;
-    padding-right: 60px;
-    padding-left: 60px;
-    gap: 32px;
-  }
-
-  @media screen and (min-width: 1440px) {
+    grid-template-columns: 1fr 700px;
     margin-bottom: 170px;
     column-gap: 150px;
+    row-gap: 50px;
     padding-left: 190px;
     padding-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -1023,6 +1019,7 @@ h3 {
 
 .order-btn-wrapper {
   display: flex;
+  align-items: center;
   gap: 24px;
   margin-bottom: 24px;
 
@@ -1042,8 +1039,9 @@ h3 {
   width: 44px;
   height: 44px;
   cursor: pointer;
+  padding: 0;
 
-  @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
     width: 58px;
     height: 58px;
   }
@@ -1051,23 +1049,22 @@ h3 {
   @media screen and (min-width: 1440px) {
     width: 70px;
     height: 70px;
-  }
+  } 
 }
 
 .order-icon {
-  width: 44px;
-  height: 44px;
-
-
+  width: 42px;
+  height: 42px; 
+ 
   @media screen and (min-width: 768px) {
-    width: 58px;
-    height: 58px;
+    width: 56px;
+    height: 56px;
   }
 
   @media screen and (min-width: 1440px) {
-    width: 70px;
-    height: 70px;
-  }
+    width: 68px;
+    height: 68px;
+  } 
 }
 
 .order-list {
@@ -1087,7 +1084,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 0;
+  padding: 24px 0;
   border-bottom: 2px solid rgb(255 255 255 / .5);
 }
 
