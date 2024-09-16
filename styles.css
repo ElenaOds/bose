@@ -161,7 +161,6 @@ section {
     margin-bottom: 170px;
     column-gap: 150px;
   }
-
 }
 
 .hero-text {
@@ -1127,4 +1126,95 @@ h3 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
+}
+
+.feedback-section {
+  gap: 16px;
+  margin-bottom: 72px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 60px;
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0;
+    gap: 170px;
+  }
+}
+
+.feedback-wrapper {
+  display: grid;
+  gap: 32px;
+
+  @media screen and (min-width: 1440px) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 150px;
+  }
+}
+
+.feedback-hyphenation {
+  display: none;
+
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.feedback-text {
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+   }
+ 
+   @media screen and (min-width: 1440px) {
+    font-size: 28px;
+   }
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.feedback-label {
+  width: 100%;
+  border-bottom: 2px solid rgb(255 255 255 / .5);
+  padding: 32px 0 16px 0;
+}
+
+.feedback-input {
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+}
+
+.feedback-input::placeholder {
+  font-size: 16px;
+  color: rgb(255 255 255 / .3)
+}
+
+.checkbox-label {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+}
+
+.checkbox {
+  width: 30px;
+  height: 28px;
+}
+
+.checkbox-link {
+  color: var(--text-color);
+  text-decoration: underline;
 }
