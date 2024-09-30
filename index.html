@@ -516,8 +516,9 @@
                 loading ="lazy">
                 <img src="./assets/images/feedback_img_mobile@1x.webp" alt="lady in headphones">
               </picture>
-
               <div class="feedback-wrapper">
+
+              <div class="feedback-title-wrapper">
                 <h2>feedback</h2>
                 <p class="feedback-text">We'll help you find the right 
                     <br class="feedback-hyphenation">headphones for you.</p>
@@ -542,12 +543,10 @@
                 </label>
                 
                 <label for="message" class="feedback-label">
-                    <textarea
-                        name="message"
-                        rows="2"
+                    <textarea 
+                        name="message" 
                         placeholder="Send us a message"
-                        class="feedback-input">
-                    </textarea>
+                        class="feedback-input"></textarea>
                 </label>
 
                 <label for="checkbox" class="checkbox-label">
@@ -556,12 +555,12 @@
                         name="checkbox"
                         class="checkbox"
                     />
-                    <p>I agree to the <a href="#" class="checkbox-link">privacy policy</a></p>
+                    <p class="checkbox-text">I agree to the <a href="#" class="checkbox-link">privacy policy</a></p>
                 </label>
 
-                <button type="submit">Send</button>
+                <button class="form-button" type="submit">Send</button>
               </form>
-
+            </div>
         </section>
         
     </main>
