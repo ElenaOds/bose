@@ -1139,11 +1139,13 @@ h3 {
     padding: 0 60px;
     grid-template-columns: 1fr;
     gap: 100px;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1440px) {
     padding: 0;
     gap: 170px;
+    margin-bottom: 170px;
   }
 }
 
@@ -1229,7 +1231,7 @@ h3 {
   background-color: transparent;
   border: none;
   outline: none;
-  color: var(--text-color);
+  color: var(--secondary-text-color);
 
   @media screen and (min-width: 1440px) {
     font-size: 20px;
@@ -1290,6 +1292,9 @@ h3 {
   font-size: 16px;
   color: var(--btn-text-color);
   text-transform: uppercase;
+  cursor: pointer;
+
+  transition: color 0.25s;
 
   @media screen and (min-width: 768px) {
     width: 294px;
@@ -1301,5 +1306,78 @@ h3 {
     height: 68px;
     align-self: center;
     font-size: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--hover-btn);
+    border: 1px solid var(--secondary-text-color);
+  }
+}
+
+footer {
+  padding: 0 20px 62px 20px;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 60px 50px 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 0 80px 74px 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-bottom: 52px;
+  row-gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.footer-nav-item {
+  justify-self: end;
+
+  @media screen and (min-width: 768px) {
+    justify-self: start;
+  }
+}
+
+.footer-nav-link {
+  color: rgba(255 255 255 / .3);
+  font-size: 12px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+  }
+  
+}
+
+.footer-contact {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    justify-self: end;
+    align-self: end;
+    font-size: 16px;
+
   }
 }
