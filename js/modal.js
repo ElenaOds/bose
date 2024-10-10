@@ -16,6 +16,8 @@
     }
 
       mobileMenu.addEventListener('click', toggleMenu);
+      mobileMenuContainer.addEventListener('click', toggleMenu);
+
 
       window.matchMedia('(min-width: 1440px)').addEventListener('change', e => {
       if (!e.matches) return;
