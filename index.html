@@ -24,16 +24,19 @@
                 <use href="./assets/icons/sprite.svg#logo"></use>
             </svg> 
         </a>
-       
-       <button class="burgrer-btn" 
-       type="button" 
-       aria-expanded="false" 
-       aria-controls="mobile-menu"
-       aria-label="open mobile menu button">
-            <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 11.989H0V10.0371H22V11.989ZM22 7.10933H0V5.15747H22V7.10933ZM22 2.22969H0V0.277832H22V2.22969Z" fill="white" fill-opacity="0.8"/>
-            </svg>
-        </button>  
+
+        <div class="menu-container">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul class="menu-backdrop js-menu-container">
+            <li><a class="nav-item" href="#characteristics" aria-label="link to characteristics section">Characteristics</a></li>
+            <li><a class="nav-item" href="#history" aria-label="link to history section">History</a></li>
+            <li><a class="nav-item" href="#reviews" aria-label="link to reviews section">Reviews</a></li>
+            <li><a class="nav-item" href="#payment" aria-label="link to payment and delivery section">Payment and delivery</a></li>
+        </ul>
+        
         <nav class="navigation">
             <ul class="navigation-list">
             <li><a class="nav-item" href="#characteristics" aria-label="link to characteristics section">Characteristics</a></li>
@@ -587,8 +590,10 @@
         </ul>
         <a class="footer-contact" href="tel:08001111111">0 (800) 111-11-11</a>
     </footer>
+    <script src="./js/modal.js"></script>
     <script src="./js/slide.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/order.js"></script>
+   
 </body>
 </html>
